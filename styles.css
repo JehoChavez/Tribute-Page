@@ -1,0 +1,178 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f6f7;
+    font-family: helvetica, arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(8, 12, 22);
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+nav ul li {
+    color: #f5f6f7;
+    vertical-align: middle;
+    padding: 0.2rem;
+}
+
+nav > ul > li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+}
+
+li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#intro {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    width: 100%;
+    background-color: rgb(16, 22, 36);
+    color: #f5f6f7;
+    text-align: center;
+    padding: 0.5em;
+    border-bottom: .5em solid #b9c266;
+}
+
+figure img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#img-caption {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+#content {
+    padding: 2vw 5vw 0 5vw;
+}
+
+#general-info {
+    padding-top: 50px;
+}
+
+#timeline {
+    padding-top: 50px;
+}
+
+ul {
+    padding: 0 10vw 0 10vw;
+}
+
+li:not(#last-li) {
+    margin-bottom: 2vw;
+}
+
+#gallery {
+   padding-top: 50px; 
+}
+
+#pics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+#gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#pic-one {
+    object-position: 0 0;
+}
+
+#pic-two {
+    object-position: 0 -15px;
+}
+
+#photoelectric {
+    border: 1px solid black;
+}
+
+#gallery::after {
+    content: "";
+    width: 350px;
+  }
+
+#link {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #2a2a40;
+    display: flex;
+    justify-content: center;
+}
+
+address {
+    font-size: 1.2em;
+    color: #f5f6f7;
+    text-align: center;
+    padding: 1em;
+}
+
+#freecodecamp:link {
+  text-decoration: none;
+  color: #f5f6f7;
+}
+
+#freecodecamp:visited {
+    text-decoration: none;
+    color: #f5f6f7;
+}
+
+#freecodecamp:hover {
+    text-decoration:underline;
+    color: #f5f6f7;
+    cursor: pointer;
+}
+
+#freecodecamp:active {
+    text-decoration: none;
+    color: #f5f6f7;
+    cursor: pointer;
+}
